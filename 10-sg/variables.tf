@@ -30,3 +30,7 @@ variable "backend_alb_sg_name" {
 variable "backend_alb_sg_description" {
     default = "for backend alb"
 }
+
+variable "mongodb_ports_vpn" {
+    default = [22,27017]
+}

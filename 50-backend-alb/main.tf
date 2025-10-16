@@ -6,6 +6,7 @@ module "backend_alb" {
   vpc_id  = local.vpc_id
   subnets = local.private_subnet_ids
   create_security_group = false
+  enable_delotion_protection = false
   security_groups = [local.backend_alb_sg_id]
 
 
